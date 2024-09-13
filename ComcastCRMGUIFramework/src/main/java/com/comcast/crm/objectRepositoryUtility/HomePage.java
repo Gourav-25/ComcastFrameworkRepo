@@ -13,6 +13,9 @@ public class HomePage {
         	PageFactory.initElements(driver,this);
         }
         
+        @FindBy(linkText="Opportunities")
+        private WebElement optlink;
+        
         @FindBy(linkText="Products")
         private WebElement productlink;
         
@@ -62,7 +65,10 @@ public class HomePage {
          public WebElement getAdministration() {
         	 return administartion;
          }
-         
+         public WebElement getOptLink() {
+            	return optlink;
+            }
+    
          public WebElement getProductlink() {
         	 return productlink;
          }
