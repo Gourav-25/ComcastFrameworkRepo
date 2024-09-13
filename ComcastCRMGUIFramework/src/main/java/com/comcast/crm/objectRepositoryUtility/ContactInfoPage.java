@@ -20,6 +20,9 @@ public class ContactInfoPage {
 	@FindBy(id="dtlview_Support End Date")
 	private WebElement suptenddt;
 	
+	@FindBy(id="homephone")
+	private WebElement homephone;
+	
 	public WebElement getSurname() {
 		return surname;		
 	}	
@@ -28,5 +31,9 @@ public class ContactInfoPage {
 	}
 	public WebElement getSuptEnddt() {
 		return suptenddt;
-	}		
+	}	
+	
+	public WebElement getHomePhone() {
+		return homephone;
+	}
   }
