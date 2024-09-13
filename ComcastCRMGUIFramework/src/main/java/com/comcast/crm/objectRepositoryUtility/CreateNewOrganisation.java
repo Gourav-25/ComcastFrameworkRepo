@@ -28,6 +28,9 @@ public class CreateNewOrganisation {
 	@FindBy(id="phone")
 	private WebElement phoneno;
 	
+	@FindBy(id="fax")
+	private WebElement fax;
+	
 	public WebElement getTypedd() {
 		return typedd;
 	}
@@ -36,6 +39,9 @@ public class CreateNewOrganisation {
 		return orgname;
 	}
 	
+	public WebElement getFax() {
+		return fax;
+	}
 	public WebElement getIndustrydd() {
 		return industrydd;
 	}
