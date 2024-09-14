@@ -10,6 +10,9 @@ public class Products {
 	@FindBy(name="search_text")
 	private WebElement searchbtn;
 	
+	@FindBy(xpath="//input[@class='crmbutton small edit']")
+	private WebElement ele2;
+	
 	public WebElement getPdAddBtn() {
 		return pdaddbtn;		
 	}
@@ -17,5 +20,8 @@ public class Products {
 	public WebElement getSearchBtn() {
 		return searchbtn;
 	}
-
+	
+	public WebElement getEle2() {
+		return ele2;
+	}
 }
