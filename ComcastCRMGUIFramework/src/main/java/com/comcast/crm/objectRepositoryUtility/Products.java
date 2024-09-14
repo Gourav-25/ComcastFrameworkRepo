@@ -10,11 +10,19 @@ public class Products {
 	@FindBy(id="bas_searchfield")
 	private WebElement productdd;
 	
+	@FindBy(xpath="//img[@alt='Products Settings']")
+	private WebElement pdsettings;
+	
 	public WebElement getPdAddBtn() {
 		return pdaddbtn;
 		
 	}	
 	public WebElement getProductDd() {
 		return productdd;		
+	}
+	
+	public WebElement getPdSettings() {
+		return pdsettings;
+		
 	}
 }
