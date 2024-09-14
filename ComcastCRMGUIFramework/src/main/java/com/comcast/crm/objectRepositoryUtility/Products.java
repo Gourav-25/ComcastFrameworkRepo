@@ -37,6 +37,7 @@ public class Products {
 	
 	public WebElement getEle2() {
 		return ele2;
+	}
 
 	public WebElement getPdSettings() {
 		return pdsettings;
