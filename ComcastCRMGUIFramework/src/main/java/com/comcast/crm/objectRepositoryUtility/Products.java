@@ -7,9 +7,14 @@ public class Products {
 	@FindBy(xpath="//img[@alt='Create Product...']")
 	private WebElement pdaddbtn;
 	
+	@FindBy(id="bas_searchfield")
+	private WebElement productdd;
+	
 	public WebElement getPdAddBtn() {
 		return pdaddbtn;
 		
+	}	
+	public WebElement getProductDd() {
+		return productdd;		
 	}
-
 }
